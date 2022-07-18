@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <body>
+        <header>
+            {{- partial "header.html" . -}}
+        </header>
+        <main>
+            {{- block "main" . }}{{- end }}
+        </main>
+        <footer>
+            {{- partial "footer.html" . -}}
+        </footer>
+            {{ partial "search-index.html" . }}
+    </body>
+</html>

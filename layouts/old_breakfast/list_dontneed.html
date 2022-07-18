@@ -1,0 +1,24 @@
+<!--THIS FILE IS NOT IN USE-->
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <body>
+        <header>
+            {{- partial "header.html" . -}}
+
+        </header>
+        <main>
+            {{ $headless := .Site.GetPage "breakfast" }}
+            {{ range $headless.Pages }}
+                <div class="section">
+                {{ .Content }}
+                </div>
+            {{ end }}
+
+            {{ partial "search-index.html" . }}
+        </main>
+        <footer>
+            {{- partial "footer.html" . -}}
+        </footer>
+    </body>
+

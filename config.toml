@@ -1,0 +1,9 @@
+baseURL = '/'
+languageCode = 'en-us'
+title = 'The Om Nommy'
+
+[outputs]
+home = ["HTML", "JSON"]
+
+[params]
+favicon = "favicon/favicon.ico"

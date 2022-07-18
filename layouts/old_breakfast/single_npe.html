@@ -1,0 +1,14 @@
+<!--THIS FILE IS NOT IN USE-->
+<html>
+    <body>
+
+{{ range (site.GetPage "breakfast").Pages }}
+<div class="section">
+  <h2>{{ .Title }}</h2>
+  {{ .Content }}
+  </div>
+{{ end }}
+
+
+    </body>
+</html>

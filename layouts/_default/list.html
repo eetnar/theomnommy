@@ -1,0 +1,9 @@
+{{ define "main" }}
+            {{ $title := .Title }}
+            {{ $getfoodpage := .Site.GetPage (printf "%s" $title) }}
+            {{ range $getfoodpage.Pages }}
+                <div class="section">
+                {{ .Content }}
+                </div>
+            {{ end }}
+{{ end }}

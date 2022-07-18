@@ -1,0 +1,8 @@
+{{ $data := getJSON "https://www.flickr.com/services/feeds/photos_public.gne?tags=punctuation,atsign&format=json&nojsoncallback=1" }}
+<div class=flickr>
+    {{ range $data.items }}
+    <div class="item">
+        {{ .description | safeHTML }} <!-- the image is also inside this description -->
+    </div>
+    {{ end }}
+</div>

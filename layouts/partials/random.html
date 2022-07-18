@@ -1,0 +1,27 @@
+<script>
+(() => {
+    try {
+        let fun_button = document.querySelector("button")
+
+        let sites = []
+        {{ range .Site.RegularPages }}
+            sites.push({{ .Permalink }})
+        {{ end }}
+
+        const randomizer = () => {
+            let i = parseInt(Math.random() * sites.length);
+            return sites[i];
+        }
+
+        const link = randomizer()
+
+        fun_button.innerHTML = `
+            <a href="${ link }">Try it!</a>
+        `
+
+    } catch (err) {
+        console.log("problem", err)
+    } 
+
+})()
+</script>

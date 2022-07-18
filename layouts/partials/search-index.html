@@ -1,0 +1,29 @@
+<!-- Basic search script. I made this one to replace lunr. It's not nearly as good, of course, but it's honest work-->
+<script src="/js/mysearch.js" defer></script>
+
+
+
+<!--The stuff below this line isn't in use but I'm leaving it around so I can go back and look at it-->
+
+<script>
+//this builds an object for use with lunr but ... decided not to use lunr so this basically does nothing now
+window.store = {
+    //grab all the pages
+    {{ range .Site.Pages }}
+    // using the permalink as the unique identifier
+    "{{ .Permalink }}": {
+        "title": "{{ .Title  }}",
+        "tags": [{{ range .Params.Tags }}"{{ . }}",{{ end }}],
+        "content": {{ .Content | plainify }}, // remove html tags
+        "url": "{{ .Permalink }}"
+    },
+    {{ end }}
+}
+</script>
+
+<!--this is lunr, but not using it ¯\_(ツ)_/¯-->
+<!--<script src="/js/lunr.js"></script>-->
+
+
+<!--this is the script that would've utilized the store from above, but decided not to use it-->
+<!--<script src="/js/search.js"></script>-->

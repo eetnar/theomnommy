@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html><meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+
+
+
+    
+    <link rel="stylesheet" href="/scss/style.css" />
+
+
+
+
+
+
+
+<link href="https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..1000,0..1,0..1,0..1&display=swap" rel="stylesheet">
+
+
+<title>The Om Nommy</title>
+<body>
+        <header><nav class="nav">
+    <div class="site-nav">
+        <ul class="site-logo">
+            <li><a href="/index.html"><img src="/images/chef_logo.png"></a></li>
+        </ul>
+        <ul class="site-pages">
+            <li><a href="/breakfast" class="active">Breakfast</a></li>
+            <li><a href="/lunch">Lunch</a></li>
+            <li><a href="/dinner">Dinner</a></li>
+            
+        </ul>
+        <ul class="site-search">
+            <li><form id="my_search"
+    action='/mysearch/' method="get">
+    <label hidden for="searching">My custom search</label>
+    <input type="text" id="searching" name="q"
+    placeholder="Find recipe">
+</form>
+</li>
+        </ul>
+    </div>
+</nav>
+
+</header>
+        <main>
+            <article class="container">
+                <div class="home-box-1">
+                    <h1>Try one of these awesome recipes!</h1>
+                    <p>Food is great and there's nothing like a good recipe to get you started.</p>
+                    <p>Everyone likes food. This site is here to help everyone make more food! You can use the "Try it!" link to the right (or bottom, if your screen is small) to find a random recipe from our collection. We borrowed the recipes from allrecipes.com. Enjoy!</p>
+                </div>
+                <div class="home-box-2">
+                    <div class="action">
+                        <button>Try it!</button><span><a href="/flickr">or look at flickr images</a></span>
+                    </div>
+                </div>
+            </article><script>
+(() => {
+    try {
+        let fun_button = document.querySelector("button")
+
+        let sites = []
+        
+            sites.push("/lunch/lunch3/")
+        
+            sites.push("/breakfast/breakfast1/")
+        
+            sites.push("/dinner/dinner1/")
+        
+            sites.push("/dinner/dinner2/")
+        
+            sites.push("/dinner/dinner3/")
+        
+            sites.push("/lunch/lunch2/")
+        
+            sites.push("/breakfast/breakfast3/")
+        
+            sites.push("/lunch/lunch1/")
+        
+            sites.push("/breakfast/breakfast2/")
+        
+
+        const randomizer = () => {
+            let i = parseInt(Math.random() * sites.length);
+            return sites[i];
+        }
+
+        const link = randomizer()
+
+        fun_button.innerHTML = `
+            <a href="${ link }">Try it!</a>
+        `
+
+    } catch (err) {
+        console.log("problem", err)
+    } 
+
+})()
+</script>
+</main>
+        <footer></footer>
+            
+<script src="/js/mysearch.js" defer></script>
+
+
+
+
+
+<script>
+
+window.store = {
+    
+    
+    
+    "\/lunch\/lunch3\/": {
+        "title": "Banh Mi",
+        "tags": [],
+        "content": "Banh Mi This banh mi (Vietnamese sandwich) is made with chicken and full of pickled vegetables.\nPrep: 30 mins\nCook: 20 mins\nTotal: 50 mins\nServings:2 2\nYield: 1 12-inch sandwich\nIngredients ½ cup rice vinegar ¼ cup white sugar ¼ cup water ¼ cup matchstick-cut carrots ¼ cup peeled and matchstick-cut daikon radish ¼ cup thinly sliced white onion 1 skinless, boneless chicken breast half 1 pinch garlic salt, or to taste ground black pepper to taste 1 (12 inch) French baguette 4 tablespoons mayonnaise ¼ cup thinly sliced cucumber 1 tablespoon fresh cilantro leaves 1 small jalapeno pepper, cut into 1/16-inch-thick matchsticks 1 wedge lime Directions Step 1 Combine rice vinegar, sugar, and water in a saucepan. Bring to a boil over medium heat, stirring until sugar has dissolved, about 1 minute. Allow the mixture to cool.\nStep 2 Place carrot, radish, and onion in a bowl. Pour in cooled vinegar mixture and let marinate at least 30 minutes.\nStep 3 While vegetables marinate, set an oven rack about 6 inches from the heat source and preheat the broiler. Lightly oil a slotted broiler pan.\nStep 4 Sprinkle chicken breast with garlic salt and pepper.\nStep 5 Place chicken on the prepared pan and broil, turning once, until browned and no longer pink in the center, about 6 minutes per side.\nStep 6 Place chicken on a cutting board. Cut into bite-sized pieces.\nStep 7 Slice baguette in half lengthwise. Pull out the soft center of the bread, leaving a cavity for the fillings.\nStep 8 Lightly toast baguette under the broiler, 2 to 3 minutes.\nStep 9 Drain off excess vinegar mixture after vegetables have marinated.\nStep 10 To assemble the sandwich, spread each half of toasted baguette with mayonnaise. Layer chicken on the bottom half of the bread. Top with cucumber, drained pickled vegetables, cilantro, and jalapeno. Squeeze lime wedge over fillings and cover with top half of baguette.\nStep 11 Cut into two 6-inch sandwiches to serve.\n", 
+        "url": "\/lunch\/lunch3\/"
+    },
+    
+    
+    "\/breakfast\/": {
+        "title": "breakfast",
+        "tags": [],
+        "content": "", 
+        "url": "\/breakfast\/"
+    },
+    
+    
+    "\/breakfast\/breakfast1\/": {
+        "title": "Breakfast: Classic Waffles!!",
+        "tags": [],
+        "content": "Classic Waffles A lovely, crispy waffle perfect for the morning.\nPrep: 10 minus\nCook: 15 mins\nTotal: 25 mins\nServings: 5\nYield: 10 to 12 waffles\nIngredients 2 cups all-purpose flour 1 teaspoon serialisation 4 teaspoons baking powder 2 tablespoons white sugar 2 eggs 1 1/2 cups warm milk 1/3 cup butter, melted 1 teaspoon vanilla extract Directions Step 1 In a large bowl, mix together flour, salt backing powder and sugar; set aside. Preheat waffle iron to desired temperature\nStep 2 In a separate bowl, beat the eggs. Stir in the milk, butter and vanilla. Pour the milk mixture into the flour mixture; beat until blended.\nStep 3 Ladle the batter into a preheated waffle iron. Cook the waffles until golden and crisp. Server immediately\n", 
+        "url": "\/breakfast\/breakfast1\/"
+    },
+    
+    
+    "\/categories\/": {
+        "title": "Categories",
+        "tags": [],
+        "content": "", 
+        "url": "\/categories\/"
+    },
+    
+    
+    "\/dinner\/dinner1\/": {
+        "title": "Chicken and Waffles",
+        "tags": [],
+        "content": "Chicken and Waffles This recipe has crunch, sweet and spicy, savory all in one.\nPrep: 15 mins\nCook: 30 mins\nAdditional: 20 mins\nTotal: 1 hr 5 mins\nServings: 4\nYield: 4 sandwiches\nIngredients 4 eggs ¼ cup heavy cream 2 tablespoons cayenne pepper 1 tablespoon salt 1 tablespoon ground black pepper 2 cups all-purpose flour 1 cup cornstarch 1 tablespoon salt 1 quart peanut oil for frying 8 chicken tenders 1 cup mayonnaise ¼ cup maple syrup 2 teaspoons prepared horseradish 1 teaspoon dry mustard powder 12 slices bacon 8 thin slices Cheddar cheese 8 plain frozen waffles Directions **Step 1 Whisk together the eggs, cream, cayenne pepper, 1 tablespoon salt, and black pepper in a large bowl. In a paper bag, shake together the flour, cornstarch, and 1 tablespoon salt.\nStep 2 Dip the chicken into the beaten egg mixture, then place into the flour mixture and shake to coat. Place the breaded chicken onto a wire rack; do not stack. Let the chicken rest for 20 minutes to allow the coating to set.\nStep 3 Heat about 3 inches of oil in a deep-fryer or large saucepan to 375 degrees F (190 degrees C). In small batches, fry chicken 5 to 8 minutes until golden brown. Remove chicken, and drain on paper towels. Set aside or keep warm in a a low oven.\nStep 4 Combine the mayonnaise, maple syrup, horseradish, and mustard powder in a medium bowl. Place the bacon in a large, deep skillet, and cook over medium-high heat, turning occasionally, until evenly browned, about 10 minutes. Drain the bacon slices on a paper towel-lined plate.\nStep 5 To assemble the sandwiches: Place 4 waffles on a cookie sheet, top each waffle with 2 chicken tenders, 3 slices of bacon, and 2 slices of Cheddar. Broil the sandwich for a 3 to 5 minutes until the cheese melts. Spread 3 tablespoons of the maple mayonnaise on the remaining 4 waffles and place on top of the sandwich.\n", 
+        "url": "\/dinner\/dinner1\/"
+    },
+    
+    
+    "\/dinner\/dinner2\/": {
+        "title": "Chicken Caesar Salad on a Stick",
+        "tags": [],
+        "content": "Chicken Caesar Salad on a Stick This chicken Caesar-on-a-stick appetizer is a fun twist on a classic salad!\nPrep: 10 mins\nTotal: 10 mins\nServings: 8\nYield: 8 servings\nIngredients 8 croutons 8 (1-inch) wedges romaine lettuce 8 (1 ounce) cubes cooked chicken 8 (1/2-inch) cubes Parmesan cheese, or to taste 8 bamboo toothpicks 8 teaspoons Caesar salad dressing Directions Step 1 Thread a crouton, romaine lettuce wedge, chicken cube, and Parmesan cheese cube onto each toothpick, respectively. Arrange toothpicks on a serving platter and drizzle Caesar salad dressing over each. ", 
+        "url": "\/dinner\/dinner2\/"
+    },
+    
+    
+    "\/dinner\/": {
+        "title": "dinner",
+        "tags": [],
+        "content": "", 
+        "url": "\/dinner\/"
+    },
+    
+    
+    "\/flickr\/": {
+        "title": "flickr",
+        "tags": [],
+        "content": " Leo Reynolds posted a photo:\nKingston upon Hull, East Riding of Yorkshire, England, UK\nBonCrowder posted a photo:\nA fun atsign in my fav hex colors\nmag3737 posted a photo:\nKombizz posted a photo:\nPrinciana posted a photo:\nVisit the website at www.vettamarketing.com/emailmarketing.php and get the details.\nClose up of at sign key on computer keyboard.\nLeo Reynolds posted a photo:\nLeo Reynolds posted a photo:\nLeo Reynolds posted a photo:\nShrewsbury, Shropshire, England, UK\nLeo Reynolds posted a photo:\nParis, France\naplumb posted a photo:\nLeo Reynolds posted a photo:\nLeo Reynolds posted a photo:\nSt Benedict's Street, Norwich, Norfolk, England, UK\n", 
+        "url": "\/flickr\/"
+    },
+    
+    
+    "\/dinner\/dinner3\/": {
+        "title": "Fruit Dip",
+        "tags": [],
+        "content": "Fruit Dip Great with fresh fruit!\nServings: 24\nYield: 3 cups\nIngredients 8 ounces cream cheese ½ cup marshmallow creme 2 cups frozen whipped topping, thawed ¼ cup unsweetened pineapple juice Directions Step 1 Blend together the cream cheese, marshmallow cream and thawed topping. Add enough pineapple juice to make it dipping consistency. Chill for 1 hour. ", 
+        "url": "\/dinner\/dinner3\/"
+    },
+    
+    
+    "\/lunch\/lunch2\/": {
+        "title": "Grilled Chicken Salad Sandwich",
+        "tags": [],
+        "content": "Grilled Chicken Salad Sandwich This is a great way to use leftover grilled chicken breasts from dinner the night before.\nPrep: 15 mins\nTotal: 15 mins\nServings: 4\nYield: 4 sandwiches\nIngredients 1 cup mayonnaise ⅛ teaspoon ground black pepper ⅛ teaspoon garlic powder ⅛ teaspoon celery salt 4 cups chopped leftover grilled chicken 2 celery stalks, sliced ½ cup sweetened dried cranberries ⅔ cup salted cashews 8 slices bread, toasted 4 tablespoons mayonnaise 4 large red leaf lettuce leaves 1 ripe tomato, sliced Directions Step 1 Whisk together 1 cup of mayonnaise, pepper, garlic powder, and celery salt until combined. Combine the chicken, celery, cranberries, and cashews in a large bowl. Pour the mayonnaise mixture over the chicken mixture and stir until evenly combined.\nStep 2 Spread 1/2 tablespoon of mayonnaise on each slice of toasted bread. Divide the chicken salad between four of the slices of toast; top each with a lettuce leaf and a slice of tomato. Complete each sandwich with the remaining toast slices.\n", 
+        "url": "\/lunch\/lunch2\/"
+    },
+    
+    
+    "\/breakfast\/breakfast3\/": {
+        "title": "Joy\u0027s Easy Banana Bread",
+        "tags": [],
+        "content": "Joy\u0026rsquo;s Easy Banana Bread This easy banana bread recipe is quick to prepare, and everyone always comes back for seconds!\nPrep: 15 mins\nCook: 1 hr\nTotal: 1 hr 15 mins\nServings: 10\nYield: 1 9x5-inch loaf\nIngredients 3 ripe bananas, mashed 1 cup white sugar 1 egg ¼ cup melted butter 1 ½ cups all-purpose flour 1 teaspoon baking soda 1 teaspoon salt Directions Step 1 Preheat oven to 325 degrees F (165 degrees C). Grease a 9x5-inch loaf pan.\nStep 2 Combine bananas, sugar, egg, and butter together in a bowl. Mix flour and baking soda together in a separate bowl; stir into banana mixture until batter is just mixed. Stir salt into batter. Pour batter into the prepared loaf pan.\nStep 3 Bake in the preheated oven until a toothpick inserted in the center of the bread comes out clean, about 1 hour.\n", 
+        "url": "\/breakfast\/breakfast3\/"
+    },
+    
+    
+    "\/lunch\/": {
+        "title": "lunch",
+        "tags": [],
+        "content": "", 
+        "url": "\/lunch\/"
+    },
+    
+    
+    "\/lunch\/lunch1\/": {
+        "title": "Lunch: Spicy Grilled Cheese Sandwich",
+        "tags": [],
+        "content": "Spicy Grilled Cheese Sandwich Grilled cheese with onions, tomatoes and jalapenos\u0026ndash; tastier than the original!\nPrep: 2 mins\nCook: 3 mins\nTotal: 5 mins\nServings: 2\nYield: 2 sandwiches\nIngredients 2 tablespoons butter or margarine 4 slices white bread 2 slices American cheese 1 roma (plum) tomato, thinly sliced ¼ small onion, chopped 1 jalapeno pepper, chopped Directions Step 1 Heat a large skillet over low heat. Spread butter or margarine onto one side of two slices of bread. Place both pieces buttered side down in the skillet. Lay a slice of cheese on each one, and top with slices of tomato, onion and jalapeno. Butter one side of the remaining slices of bread, and place on top buttered side up. When the bottom of the sandwiches are toasted, flip and fry until brown on the other side. ", 
+        "url": "\/lunch\/lunch1\/"
+    },
+    
+    
+    "\/search\/": {
+        "title": "lunr search",
+        "tags": [],
+        "content": "", 
+        "url": "\/search\/"
+    },
+    
+    
+    "\/mysearch\/": {
+        "title": "my search",
+        "tags": [],
+        "content": "", 
+        "url": "\/mysearch\/"
+    },
+    
+    
+    "\/breakfast\/breakfast2\/": {
+        "title": "Perfect Summer Fruit Salad",
+        "tags": [],
+        "content": "Perfect Summer Fruit Salad The perfect fruit salad for a backyard bbq or any occasion.\nPrep: 25 mins\nCook: 5 mins\nAdditional: 3 hrs\nTotal: 3 hrs 30 mins\nServing: 10\nYield: 10 servings\nIngredients ⅔ cup fresh orange juice ⅓ cup fresh lemon juice ⅓ cup packed brown sugar ½ teaspoon grated orange zest ½ teaspoon grated lemon zest 1 teaspoon vanilla extract 2 cups cubed fresh pineapple 2 cups strawberries, hulled and sliced 3 kiwi fruit, peeled and sliced 3 bananas, sliced 2 oranges, peeled and sectioned 1 cup seedless grapes 2 cups blueberries Directions Step 1 Bring orange juice, lemon juice, brown sugar, orange zest, and lemon zest to a boil in a saucepan over medium-high heat. Reduce heat to medium-low, and simmer until slightly thickened, about 5 minutes. Remove from heat, and stir in vanilla extract. Set aside to cool.\nStep 2 Layer the fruit in a large, clear glass bowl in this order: pineapple, strawberries, kiwi fruit, bananas, oranges, grapes, and blueberries. Pour the cooled sauce over the fruit. Cover and refrigerate for 3 to 4 hours before serving.\n", 
+        "url": "\/breakfast\/breakfast2\/"
+    },
+    
+    
+    "\/tags\/": {
+        "title": "Tags",
+        "tags": [],
+        "content": "", 
+        "url": "\/tags\/"
+    },
+    
+    
+    "\/": {
+        "title": "The Om Nommy",
+        "tags": [],
+        "content": "", 
+        "url": "\/"
+    },
+    
+}
+</script>
+
+
+
+
+
+
+
+
+
+    </body>
+</html>

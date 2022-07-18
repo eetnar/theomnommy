@@ -1,0 +1,24 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+<!--Scss was just easier for me to read ¯\_(ツ)_/¯-->
+{{ $scss := resources.Get "scss/style.scss" }}
+{{ if $scss }}
+    {{ $scss_location := $scss | resources.ToCSS }}
+    <link rel="stylesheet" href="{{ $scss_location.Permalink }}" />
+{{ else }}
+    <script>
+        console.log("styles didn't load")
+    </script>
+{{ end }}
+
+
+
+
+
+<!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:ligh,wght@0,700;1,700">-->
+<link href="https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..1000,0..1,0..1,0..1&display=swap" rel="stylesheet">
+<!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">-->
+
+<title>The Om Nommy</title>

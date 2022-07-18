@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <body>
+        <header>
+            {{- partial "header.html" . -}}
+        </header>
+        <main>
+            <article class="container">
+                <div class="home-box-1">
+                    <h1>Try one of these awesome recipes!</h1>
+                    <p>Food is great and there's nothing like a good recipe to get you started.</p>
+                    <p>Everyone likes food. This site is here to help everyone make more food! You can use the "Try it!" link to the right (or bottom, if your screen is small) to find a random recipe from our collection. We borrowed the recipes from allrecipes.com. Enjoy!</p>
+                </div>
+                <div class="home-box-2">
+                    <div class="action">
+                        <button>Try it!</button><span><a href="/flickr">or look at flickr images</a></span>
+                    </div>
+                </div>
+            </article>
+            {{- partial "random.html" . -}}
+        </main>
+        <footer>
+            {{- partial "footer.html" . -}}
+        </footer>
+            {{ partial "search-index.html" . }}
+
+    </body>
+</html>
